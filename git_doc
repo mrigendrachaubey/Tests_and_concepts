@@ -1,0 +1,20 @@
+Initialize the local directory as a Git repository.
+	git init
+
+Add the files in your new local repository. This stages them for the first commit.
+	git add .
+
+Commit the files that you've staged in your local repository.
+	git commit -m "First commit"
+
+create a repository at github account
+
+In Terminal, add the URL for the remote repository where your local repository will be pushed.
+	git remote add origin remote repository URL
+
+Verifies the new remote URL
+	git remote -v
+
+Push the changes in your local repository to GitHub.
+	git push origin master
+
