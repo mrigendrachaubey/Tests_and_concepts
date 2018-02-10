@@ -1,0 +1,33 @@
+Required to be a master in these
+    
+    Arrays, atleast double pointer array
+    Linked Lists, single, double, circular
+    Strings,
+    Stacks,
+    Queues, circular buffer/queue
+
+Let’s now learn some simple algorithms,
+
+    Sorting - Insertion sort, Merge sort, Quick sort, Heap sort, Bucket sort, Counting sort, Radix sort, External sorting
+    Search - Linear search, Binary Search (along with its variants).
+    Prime Numbers - Sieve of Eratosthenes, Primality test
+    Strings - String searching, LCS, Palindrome detection
+    Miscellaneous - Euclidean algorithm, Matrix multiplication, Fibonacci Numbers, Pascal's Triangle, Max Subarray problem
+
+how to approach new problems.
+
+1. think, draw do rough sketch.
+2. write down what exactly is the problem you think, and what is the expected solution according to yourself.
+3. once 2 is done, try to approach from problem to solution in plain english.
+4. try to write a simple code based on this understanding.
+5. analyse corner cases.
+6. improve code.
+
+=====
+from stacks and queues only double queue can be done.Rest can be followed.
+from linked lists, only double linked list can be done, rest can be followed.
+look for implementation of these in struct form later, first do it with arrays.Understand the basic problem of these.
+Undestand dynamic way of both.
+=====
+
+
