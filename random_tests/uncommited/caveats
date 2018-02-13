@@ -1,0 +1,5 @@
+Passing a Pointer to a Pointer
+
+If a pointer still references the original memory after it has been freed, it is called a
+dangling pointer. 
+So to combat this problem we need to assign NULL to the pointer variable after free. But if that memory location address is distributed among other pointers than Writing your own free function is one way too.
