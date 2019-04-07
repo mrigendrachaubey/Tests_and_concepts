@@ -5,13 +5,14 @@
 
 2. Mail from command line,
 
-To install sponge on a Debian-like system:
+To install sponge on a Debian-like system,
 
 		apt-get install moreutils
 		sudo apt install mailutils
 		sudo apt-get install ssmtp**
 		sudo vim /etc/ssmtp/ssmtp.conf
-Add the following to the file:
+
+Add the following to the file,
  
 		AuthUser=<user>@gmail.com
 		AuthPass=Your-Gmail-Password
@@ -19,11 +20,11 @@ Add the following to the file:
 		UseSTARTTLS=YES
 
 tests
-simple test 
+simple test,
 
 		# cat some-text-file | mail -s "Test" <user>@gmail.com
 
-test building android, do envsetup.sh and lunch
+test building android, do envsetup.sh and lunch,
 
 		# make -j4 showcommands &> build.log ; tail -n 100 build.log | sponge build_aosp8-tail.log | mail -s "Test log" <user>@gmail.com
 
@@ -31,51 +32,54 @@ test building android, do envsetup.sh and lunch
 
 [link tmux](https://github.com/gpakosz/.tmux)
 
-5. List all installed packages: apt list --install
-6. Upgrade all the currently installed software packages on the system:
+5. List all installed packages,
+
+		apt list --install
+
+6. Upgrade all the currently installed software packages on the system,
 
 		apt-get upgrade
 
-7. Resynchronize the package index files from the their sources specified in /etc/apt/sources.list file:
+7. Resynchronize the package index files from the their sources specified in /etc/apt/sources.list file,
 
 		apt-get update
 
-8. Un-install software packages without removing their configuration files:
+8. Un-install software packages without removing their configuration files,
 
 		apt-get remove <package-name>
 
-9. Remove software packages including their configuration files:
+9. Remove software packages including their configuration files,
 
 		apt-get purge <package-name>
 
-10. Free up the disk space by cleaning retrieved (downloaded) .deb files (packages) from the local repository:
+10. Free up the disk space by cleaning retrieved (downloaded) .deb files (packages) from the local repository,
 
 		apt-get clean
 
-11. Update package cache and checks for broken dependencies.:
+11. Update package cache and checks for broken dependencies,
 
 		apt-get check
 
-12. Searche the local repositories in the system and install the build dependencies for package:
+12. Searche the local repositories in the system and install the build dependencies for package,
 
 		apt-get build-dep <package-name>
 
 
-13. display raw information about dependencies of a particular package:
+13. display raw information about dependencies of a particular package,
 
 		apt depends glances
 
-14. View Information About Package:
+14. View Information About Package,
 
 		apt show <package-name>
 
-15. tmux terminal
+15. tmux terminal,
 
 		ctrl-a % - vertical split
 		ctrl-a " - horizontal split
 		ctrl-a <arrow keys> - go to desired terminal
 
-16. screen session
+16. screen session,
 
 		Ctrl-a c	Create new window (shell)
 		Ctrl-a ?	Help (display a list of commands)
@@ -83,7 +87,7 @@ test building android, do envsetup.sh and lunch
 		Ctrl-a D (Shift-d)	Power detach and logout
 		Ctrl-a d
 
-to go to a screen session, list screen sessions :
+to go to a screen session, list screen sessions,
 
 		screen -ls
 		screen -r 20273.pts-23.CPU-384U
@@ -96,19 +100,19 @@ or,
 
 You can't use tmux with screen as 'ctrl-a d' will kill tmux instead of detaching the screen session.
 
-17.  Ultimate source for linux driver understandings
+17.  Ultimate source for linux driver understandings,
 
 [link linux-kernel-labs](https://linux-kernel-labs.github.io/master/)
 
-> corresponding important teaching material and exercises are here
+> corresponding important teaching material and exercises are here,
 
 [link linux-kernel-labs-kernel](https://github.com/linux-kernel-labs/linux)
 
-> Another linux lab github with docket
+Another linux lab github with docket,
 
 [link linux-lab](https://github.com/mrigendrachaubey/linux-lab)
 
-> Readme Docker for lab :
+Readme Docker for lab,
 
 [link docker-ce-ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
