@@ -5,32 +5,38 @@
 
 2. Mail from command line,
 
-To install sponge on a Debian-like system,
+	To install sponge on a Debian-like system,
 
 		apt-get install moreutils
 		sudo apt install mailutils
 		sudo apt-get install ssmtp**
 		sudo vim /etc/ssmtp/ssmtp.conf
 
-Add the following to the file,
+	Add the following to the file,
  
 		AuthUser=<user>@gmail.com
 		AuthPass=Your-Gmail-Password
 		mailhub=smtp.gmail.com:587
 		UseSTARTTLS=YES
 
-tests
-simple test,
+	tests
+	simple test,
 
 		# cat some-text-file | mail -s "Test" <user>@gmail.com
 
-test building android, do envsetup.sh and lunch,
+	test building android, do envsetup.sh and lunch,
 
 		# make -j4 showcommands &> build.log ; tail -n 100 build.log | sponge build_aosp8-tail.log | mail -s "Test log" <user>@gmail.com
 
 4. better command terminal
 
 [link tmux](https://github.com/gpakosz/.tmux)
+
+and terminix, add the repo,
+
+		sudo add-apt-repository ppa:webupd8team/terminix
+		sudo apt update
+		sudo apt install terminix
 
 5. List all installed packages,
 
@@ -93,18 +99,16 @@ to go to a screen session, list screen sessions,
 		screen -r 20273.pts-23.CPU-384U
 		ctrl-a 
 		:quit
-
 or,
-
 		screen -X -S 3651.pts-17.CPU-xxx quit
 
 You can't use tmux with screen as 'ctrl-a d' will kill tmux instead of detaching the screen session.
 
-17.  Ultimate source for linux driver understandings,
+17. Ultimate source for linux driver understandings,
 
 [link linux-kernel-labs](https://linux-kernel-labs.github.io/master/)
 
-> corresponding important teaching material and exercises are here,
+Corresponding important teaching material and exercises are here,
 
 [link linux-kernel-labs-kernel](https://github.com/linux-kernel-labs/linux)
 
