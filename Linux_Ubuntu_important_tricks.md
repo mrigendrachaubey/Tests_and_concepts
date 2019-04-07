@@ -112,4 +112,4 @@ You can't use tmux with screen as 'ctrl-a d' will kill tmux instead of detaching
 
 [link docker-ce-ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
-[link docker-resources_readmes](https://hub.docker.com/editions/community/docker-ce-server-ubuntu?tab=resources)
+@mrigendrachaubey
